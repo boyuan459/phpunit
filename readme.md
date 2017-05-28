@@ -7,6 +7,17 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## How to run this UNIT TEST
+1. composer install
+
+2. vendor/bin/phpunit
+
+3. This test finished the first 3 questions in the test
+all the source file are under the app directory, they are 
+Palindrome, Instagram, AngularTM respectively.
+
+4. All the unit tests are under the tests/Unit directory
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
