@@ -42,4 +42,22 @@ class Instagram
         }
         return 'NOTAGRAM';
     }
+
+    public function instagram2($str)
+    {
+        if (empty($str)) return 'NOTAGRAM';
+
+        $strarr = str_split(preg_replace("/[^A-Za-z]/", "", strtolower($str)));
+        $uniarr = array_unique($strarr);
+
+        $strlen = count($strarr);
+        $unilen = count($uniarr);
+        if ($strlen == $unilen) {
+            return 'HETEROGRAM';
+        } else if ($strlen % $unilen == 0) {
+            return 'ISOGRAM';
+        } else {
+            return 'NOTAGRAM';
+        }
+    }
 }

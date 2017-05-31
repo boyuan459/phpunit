@@ -29,6 +29,15 @@ class InstagramTest extends TestCase
         $this->assertEquals($expected, $actual);
     }
 
+    /**
+     * @dataProvider providerTestInstagram
+     */
+    public function testInstagram2($q, $expected)
+    {
+        $actual = $this->inst->instagram2($q);
+        $this->assertEquals($expected, $actual);
+    }
+
     public function testSame()
     {
         $arr = [0,0,0,0,0,0];
